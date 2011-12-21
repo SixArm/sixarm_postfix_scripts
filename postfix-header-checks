@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Postfix testing of an anti-spam file for header checks.
+# The file name is hardcoded to "header_checks.txt" and
+# is in PCRE format (Perl Compatible Regular Expressions).
+#
+# This script is for our quick testing of new ad-hoc expressions;
+# it is not intended for general use or for flexible parameters.
+#
+# Syntax:
+#   postfix-header-checks message.txt
+#
+# See:
+#   postfix-body-checks
+
+postmap -q - pcre:header_checks.txt < 

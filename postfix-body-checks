@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Postfix testing of an anti-spam file for body checks.
+# The file name is hardcoded to "body_checks.txt" and
+# is in PCRE format (Perl Compatible Regular Expressions).
+#
+# This script is for our quick testing of new ad-hoc expressions;
+# it is not intended for general use or for flexible parameters.
+#
+# Syntax:
+#   postfix-body-checks message.txt
+#
+# See:
+#   postfix-header-checks
+
+postmap -q - pcre:body_checks.txt < 

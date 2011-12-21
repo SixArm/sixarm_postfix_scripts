@@ -1,0 +1,9 @@
+SixArm.com » Postfix » Scripts for mail server management
+
+This repo has a few helpful Postfix scripts:
+
+  * postfix-version        Show the Postfix mail version number
+  * postfix-header-checks  Quick testing for anti-spam header expressions 
+  * postfix-body-checks    Quick testing for anti-spam body expressions 
+
+For more info please see documentation for postfix, postconf, postmap, etc.
